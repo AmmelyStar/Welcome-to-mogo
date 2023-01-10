@@ -33,7 +33,9 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
     height: 100vh;
     background: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg) center no-repeat;
-    background-size: cover;
+    background-size: cover;    
+    position: relative;
+    z-index: 1;
 }
 
 .intro__inner{
@@ -64,7 +66,7 @@ h1, h2, h3, h4, h5, h6{
     width: 60px;
     height: 3px;
     background-color: white;
-    margin: 60px auto 0px;
+    margin: 60px auto;
 
 }
 
@@ -132,6 +134,14 @@ h1, h2, h3, h4, h5, h6{
     opacity: 1;
 }
 
+.nav__link.active:after{
+    opacity: 1;    
+}
+
+.nav__link.active{
+    color: #fce38a;
+}
+
 /*Button*/
 .btn {
     display: inline-block;
@@ -143,4 +153,57 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background 0.1s linear color 0.1s linear;
+}
+
+.btn:hover{
+    background: white;
+    color: black;
+}
+
+/*Slider*/
+
+.slider{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__item{
+    width: 23%;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-top: 3px solid white;
+    opacity: 0.7;
+    position: relative;
+}
+
+.slider__num{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.slider__item.active{
+    opacity: 1;
+}
+
+.slider__item.active:before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    top: -3.3px;
+    left: 0;
+    z-index: 1;
+    position: absolute;    
+   background-color: rgb(245, 209, 4);
+}
+
+.slider__inner{
+    display: flex;
+    justify-content: space-between;
 }
