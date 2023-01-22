@@ -146,6 +146,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*Button*/
+
 .btn {
     display: inline-block;
     vertical-align: top;
@@ -220,7 +221,7 @@ h1, h2, h3, h4, h5, h6{
 .section__header{
     width: 100%;
     max-width: 950px;
-    margin-bottom: 0 auto 50px;
+    margin:0 auto;
     text-align: center;
 }
 
