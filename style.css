@@ -280,7 +280,6 @@ h1, h2, h3, h4, h5, h6{
 
 .about__item:hover .about__img{
     transform: translate3d(-10px, -10px, 0);
-
 }
 
 
