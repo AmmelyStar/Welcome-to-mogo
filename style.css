@@ -419,7 +419,28 @@ hr{
     width: 50%;
 }
 
+/*Accordion*/
+.accordion__item{
+    border: 1px solid #e5e5e5;
+}
 
+.accordion__header{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion__content{
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #999;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.accordion__title{
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
 
 
 
