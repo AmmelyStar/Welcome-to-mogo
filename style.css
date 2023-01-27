@@ -253,6 +253,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .section--devices{
+    margin-bottom: 40px;
     padding-bottom: 0;
     background: url(img/unique\ designe/devices-bg.jpg) center no-repeat;
     background-size: cover;
@@ -407,6 +408,15 @@ hr{
     bottom: -80px;
     right: 0;
     z-index: 1;
+}
+
+/*We do*/
+.wedo{
+    display: flex;
+}
+
+.wedo__item{
+    width: 50%;
 }
 
 
