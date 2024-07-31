@@ -162,11 +162,19 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
     transition: background 0.1s linear color 0.1s linear;
     margin-top: -290px;
+    cursor: pointer;
 }
 
+
+.btn:focus{
+    color: rgb(233, 46, 46);
+     border: 3px solid rgb(241, 186, 35);
+     cursor: pointer;
+}
 .btn:hover{
     color: rgb(233, 46, 46);
-     border: 3px solid rgb(241, 186, 35);;
+     border: 3px solid rgb(241, 186, 35);
+     cursor: pointer;
 }
 
 /*Slider*/
@@ -278,8 +286,32 @@ h1, h2, h3, h4, h5, h6{
 
 .card__item{
     width: 380px;
-    background-color: #95e1d3;
+ 
+}
+
+.card__inner{
+       background-color: #95e1d3;
     position: relative;
+
+}
+
+.card__info{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card__name{
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card__prof{
+    font-size: italic;
+    color: #999;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .card__img{
@@ -288,12 +320,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-.card__item:hover .card__img{
+.card__inner:hover .card__img{
     transform: translate3d(-10px, -10px, 0);
 }
 
 
-.card__item:hover .card__img img{
+.card__inner:hover .card__img img{
     opacity: 0.3;
 }
 
@@ -318,7 +350,7 @@ h1, h2, h3, h4, h5, h6{
     transition: opacity 0.1s linear;
 }
 
-.card__item:hover .card__text{
+.card__inner:hover .card__text{
     opacity: 1;
 }
 
@@ -615,6 +647,15 @@ border-right: none;
 .social_img:active,
 .social_img:hover{
  transform: scale(1.2);
+}
+
+
+/*Logos*/
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
